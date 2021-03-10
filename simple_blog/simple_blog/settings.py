@@ -45,7 +45,7 @@ INSTALLED_APPS = [
 ]
 
 # Bootstrap
-CRISPY_TEMPALTE_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 MIDDLEWARE = [
