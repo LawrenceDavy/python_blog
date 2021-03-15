@@ -41,3 +41,8 @@ def login_page(request):
 def logout_user(request):
     logout(request)
     return HttpResponseRedirect(reverse('App_Login:signin'))
+
+
+@login_required
+def profile(request):
+    return render(request, 'App_Login/profile.html', context={})
