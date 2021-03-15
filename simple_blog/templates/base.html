@@ -27,13 +27,16 @@
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'App_Login:logout' %}">Logout</a>
             </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="{% url 'App_Login:profile' %}">Profile</a>
+            </li>
 
     {% else %}
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'App_Login:signup' %}">Sign Up</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'App_Login:signup' %}">Login</a>
+              <a class="nav-link" href="{% url 'App_Login:signin' %}">Login</a>
             </li>
     {% endif %}
 
