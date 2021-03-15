@@ -57,4 +57,4 @@ def user_change(request):
         if form.is_valid():
             form.save()
             form = UserProfileChange(instance=current_user)
-    return render(request, 'App_Login/change_profile.html', context={'form':form})
+    return render(request, 'App_Login/change_profie.html', context={'form':form})
